@@ -14,7 +14,9 @@ export class AppComponent {
     this.items = [
       { name: 'assets/img/hs/hs-product-1.jpg' },
       { name: 'assets/img/hs/hs-product-2.jpg' },
+      { name: 'assets/img/hs/hs-product-3.jpg' },
+      { name: 'assets/img/hs/hs-product-3.jpg' },
       { name: 'assets/img/hs/hs-product-3.jpg' }
-    ]
+    ];
   }
 }
