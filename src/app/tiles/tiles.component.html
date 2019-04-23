@@ -1,57 +1,24 @@
 <!-- Page Features -->
-<div class="row text-center">
+<div class="row ">
 
-  <div class="col-lg-3 col-md-6 mb-4">
-    <div class="card">
-      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">Find Out More!</a>
-      </div>
-    </div>
-  </div>
+  <mat-card class="example-card"  *ngFor="let product of products">
 
-  <div class="col-lg-3 col-md-6 mb-4">
-    <div class="card">
-      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">Find Out More!</a>
-      </div>
-    </div>
-  </div>
+    <img  src='../../assets/img/shop-logo-3.png' alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p><em>{{product.store_name}}</em></p>
+      <h6>
+        {{product.title}}
+      </h6>
+      <p>
+        {{product.price | currency:'USD'}} </p>
+      <p><em>{{product.description.slice(0,20)}}</em></p>
 
-  <div class="col-lg-3 col-md-6 mb-4">
-    <div class="card">
-      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">Find Out More!</a>
-      </div>
-    </div>
-  </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>View Details</button>
+    </mat-card-actions>
+  </mat-card>
 
-  <div class="col-lg-3 col-md-6 mb-4">
-    <div class="card">
-      <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">Find Out More!</a>
-      </div>
-    </div>
-  </div>
 
 </div>
 <!-- /.row -->
