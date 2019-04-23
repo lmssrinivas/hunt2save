@@ -1,66 +1,24 @@
-<!--header top start -->
-<header class="top-header-bar-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="top-header-bar">
-          <!-- Email -->
-          <li class="top-email">
-            <i class="fa fa-envelope-o"></i> hunt2save.ui@gmail.com
-          </li>
-          <!-- / Email -->
 
-          <!-- Cart -->
-          <li class="top-cart">
-            <a href="#"><i class="fa fa-shopping-cart"></i> My Cart - $ 0 </a>
-          </li> <!-- / Cart -->
+<header>
 
-          <!-- Account -->
-          <li class="top-account">
-            <a href="#"><i class="fa fa-user"></i> Account </a>
-          </li><!-- / Account -->
 
-          <!-- Top Search -->
-          <li class="top-search">
-            <!-- Search Form -->
-            <form role="search" method="get" class="pull-right" id="searchform_topbar"
-                  action="#">
-              <label>
-                <span class="screen-reader-text"></span>
-                <input class="search-field-top-bar" id="search-field-top-bar" placeholder="Search ..." value="" name="s"
-                       type="search">
-              </label>
-              <button id="search-top-bar-submit" type="submit" class="search-top-bar-submit">
-                <span class="fa fa-search"></span>
-              </button>
-            </form>
-          </li><!-- / Top Search -->
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+    <a class="navbar-brand" routerLink="/">
+      <img src="../../assets/img/logo.png" width="30" height="30" class="d-inline-block" alt="">
+      Hunt2Save
+    </a>
+
+    <div class="form-inline" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/stores">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/deals">Deals</a>
+        </li>
+      </ul>
+
     </div>
-  </div>
-</header>
-<!--header top end-->
+  </nav>
 
-<!--header main start-->
-<header id="masthead" class="site-header" role="banner">
-  <div class="site-branding container">
-    <div class="row">
-      <div class="col-md-4 header-logo">
-        <a href="#" class="custom-logo-link" rel="home" itemprop="url">
-          <img width="120" height="120" src="../../assets/img/hs/hs-logo.png" class="custom-logo" alt="Hunt2Save" itemprop="logo" srcset="../../assets/img/hs/hs-logo.png 150w, ../../assets/img/hs/hs-logo.png 65w" sizes="(max-width: 120px) 100vw, 120px">
-        </a>
-      </div>
-      <nav id="site-navigations" class="main-navigations" role="navigations" class="col-md-8">
-        <ul id="desktop-menu" class="sf-menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-83 active"><a title="Home" href="http://www.hunt2save.com/wp-content/uploads/2016/10/Logo_10-14.png">Home</a></li>
-          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a title="Shop" href="#">Deals</a></li>
-          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a title="Blog" href="#">Stores</a></li>
-          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a title="Contact" href="#">Contact</a></li>
-          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a title="Contact" href="#">Faq</a></li>
-        </ul>						<!-- /// Mobile Menu Trigger //////// -->
-        <a href="#" id="mobile-menu-trigger" class="mobile-menu-closed"> <i class="fa fa-bars"></i> </a>
-      <!-- end #mobile-menu-trigger -->
-    </nav>
-    </div>
-  </div><!-- .site-branding -->
 </header>

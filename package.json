@@ -36,7 +36,6 @@
     "graphql-tools": "^4.0.4",
     "merge-graphql-schemas": "^1.5.8",
     "mongoose": "^5.5.1",
-    "ng2-carouselamos": "^3.2.0",
     "nodemon": "^1.18.11",
     "rxjs": "^6.4.0",
     "tslib": "^1.9.0",

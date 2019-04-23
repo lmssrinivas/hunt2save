@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient}        from '@angular/common/http';
+import {DealsService}      from '../deals.service';
 
 @Component({
   selector: 'app-tiles',
@@ -7,45 +8,13 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./tiles.component.css']
 })
 export class TilesComponent implements OnInit {
-  products: any = [
-    {
-      'name': 'Test 1',
-      'imgURL': 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      'description': 'TEST test',
-      'price': 50.50,
-      'additionalText': 'Free Shipping'
-    },
-    {
-      'name': 'Test 1',
-      'imgURL': 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      'description': 'Dog Food',
-      'price': 80.50,
-      'additionalText': 'Free Shipping'
-    },
-    {
-      'name': 'Test 1',
-      'imgURL': 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      'description': 'Dog Food',
-      'price': 50.50,
-      'additionalText': 'Free Shipping'
-    },
-    {
-      'name': 'Test 1',
-      'imgURL': 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      'description': 'Dog Food',
-      'price': 50.50,
-      'additionalText': 'Free Shipping'
-    },
-    {
-      'name': 'Test 1',
-      'imgURL': 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      'description': 'Dog Food',
-      'price': 50.50,
-      'additionalText': 'Free Shipping'
-    }
-  ];
 
-  constructor(public http: HttpClient) {
+
+  products: any = [];
+
+  constructor(public dealsService: DealsService) {
+
+    this.products = this.dealsService.deals;
   }
 
   ngOnInit() {
