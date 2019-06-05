@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
 import { DealsComponent } from './deals/deals.component';
 import { StoresComponent } from './stores/stores.component';
 import { HomeComponent } from './home/home.component';
+import { CategoryListComponent } from './category-list/category-list.component';
 
 
 
@@ -29,14 +30,16 @@ import { HomeComponent } from './home/home.component';
     TilesComponent,
     DealsComponent,
     StoresComponent,
-    HomeComponent
+    HomeComponent,
+    CategoryListComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
