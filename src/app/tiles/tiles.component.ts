@@ -1,25 +1,29 @@
-import {Component, OnInit} from '@angular/core';
-import {HttpClient}        from '@angular/common/http';
-import {DealsService}      from '../deals.service';
+import {Component, Input, OnInit} from '@angular/core';
+import {DealsService}             from '../deals.service';
 
 @Component({
   selector: 'app-tiles',
   templateUrl: './tiles.component.html',
   styleUrls: ['./tiles.component.css']
 })
-export class TilesComponent implements OnInit {
+export class TilesComponent implements OnInit
+{
 
+  @Input('products')products: any = [];
 
-  products: any = [];
+  constructor()
+  {
 
-  constructor(public dealsService: DealsService) {
-
-    this.products = this.dealsService.deals;
   }
 
-  ngOnInit() {
-    console.log(this.products);
+  ngOnInit()
+  {
+
   }
 
+  productDetails(product)
+  {
+    window.open(product.clickurl)
+  }
 
 }
