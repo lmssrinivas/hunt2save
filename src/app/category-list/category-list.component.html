@@ -3,7 +3,7 @@
 
   <div class="section">
     <div class="item" *ngFor="let category of categories">
-      {{category.$t}}
+      <a [routerLink]="['/category', category.id]" routerLinkActive="active">{{category.$t}}</a>
     </div>
 
   </div>

@@ -18,6 +18,7 @@ import { DealsComponent } from './deals/deals.component';
 import { StoresComponent } from './stores/stores.component';
 import { HomeComponent } from './home/home.component';
 import { CategoryListComponent } from './category-list/category-list.component';
+import { CategoryComponent } from './category/category.component';
 
 
 
@@ -31,7 +32,8 @@ import { CategoryListComponent } from './category-list/category-list.component';
     DealsComponent,
     StoresComponent,
     HomeComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
